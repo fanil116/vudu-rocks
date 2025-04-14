@@ -1,1 +1,1 @@
-export const getBaseUrl = () => `jsonplaceholder.typicode.com`;
+export const getBaseUrl = () => `https://jsonplaceholder.typicode.com`;

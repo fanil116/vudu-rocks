@@ -1,0 +1,17 @@
+#app {
+    background-color: rgb(118, 118, 118);
+    height: 100vh;
+}
+.bg_white {
+    background-color: white!important;
+}
+
+.base-card {
+    &__title {
+        line-height: 1.5rem;
+    }
+    &__footer {
+        display: flex;
+        align-items: flex-end;
+    }
+}
