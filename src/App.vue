@@ -69,7 +69,7 @@ const updatePage = (page: number) => {
       single-line
       class="mb-5"
     ></v-text-field>
-    <v-row>
+    <v-row v-if="paginatedItems.length">
       <v-col
         v-for="(item, index) in paginatedItems"
         :key="index"
@@ -85,6 +85,7 @@ const updatePage = (page: number) => {
         />
       </v-col>
     </v-row>
+    <div v-else class="text-red">Нет данных</div>
     <BasePagination
       class="mt-5"
       :length="totalPages"
